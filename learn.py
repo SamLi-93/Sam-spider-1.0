@@ -13,7 +13,8 @@ def getimg(img):
     l = re.findall(reg, img)
     x = 0
     for imgurl in l:  
-        urllib.urlretrieve(imgurl,'D:/%s.jpg' % x)  
+        # urllib.urlretrieve(imgurl,'D:/%s.jpg' % x)  
+        urllib.urlretrieve(imgurl,'.jpg' %x)
         x = x + 1      
 
 
